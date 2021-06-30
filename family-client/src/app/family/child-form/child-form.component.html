@@ -1,0 +1,34 @@
+<nav class="nav navbar-nav">
+    <li class="active col-3 ">Form Family</li>
+</nav>
+<h3>Form Of Child</h3>    
+    <div class="card-body">
+        <form  [formGroup]="childForm">
+            <div class="form-group col-xs-4">
+                <label class="label label-default" for="id">Child Id:</label>
+                <input type="text" class="form-control" id="id" formControlName="id">
+                <ng-container *ngIf="childForm.controls.id.touched && childForm.controls.id.errors">
+                    <div class="alert alert-danger" *ngIf="childForm.controls.id.errors.required">This field is required</div>
+                    <div class="alert alert-danger" *ngIf="childForm.controls.id.errors.pattern">This field need be8 or  9 numbers</div>
+                </ng-container>
+            </div>
+            <div class="form-group col-xs-4">   
+                <label class="label label-default" for="name">Child Name:</label>
+                <input type="text" class="form-control" id="name" formControlName="name">
+                <ng-container *ngIf="childForm.controls.name.touched && childForm.controls.name.errors">
+                    <div class="alert alert-danger" *ngIf="childForm.controls.name.errors.required">This field is required</div>
+                    <div class="alert alert-danger" *ngIf="childForm.controls.name.errors.pattern">This field need to be between 2-10 chars</div>
+                </ng-container>
+            </div>
+            <div class="form-group col-xs-4">  
+                <label class="label label-default" for="dateOfBorn">Child Date Of Born:</label>
+                <input type="date" class="form-control" id="dateOfBorn" formControlName="dateOfBorn" (change)="correctDate()">
+                <div class="alert alert-danger" *ngIf="flag">this Date isn't correct</div>
+                <ng-container *ngIf="childForm.controls.dateOfBorn.touched && childForm.controls.dateOfBorn.errors">
+                    <div class="alert alert-danger" *ngIf="childForm.controls.dateOfBorn.errors.required">This field is required</div>
+                </ng-container>
+            </div>
+            <button class="btn" (click)="SaveChild()" [disabled]="!childForm.valid || flag">Save Child</button>
+            <button class="btn btn-default" (click)="GoToParent()">Go To Parent</button>
+        </form>
+    </div>

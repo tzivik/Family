@@ -1,0 +1,12 @@
+C:\Users\tzivy\Documents\Family\Family.DAL\bin\Debug\netcoreapp3.1\Family.DAL.deps.json
+C:\Users\tzivy\Documents\Family\Family.DAL\bin\Debug\netcoreapp3.1\Family.DAL.runtimeconfig.json
+C:\Users\tzivy\Documents\Family\Family.DAL\bin\Debug\netcoreapp3.1\Family.DAL.runtimeconfig.dev.json
+C:\Users\tzivy\Documents\Family\Family.DAL\bin\Debug\netcoreapp3.1\Family.DAL.dll
+C:\Users\tzivy\Documents\Family\Family.DAL\bin\Debug\netcoreapp3.1\Family.DAL.pdb
+C:\Users\tzivy\Documents\Family\Family.DAL\obj\Debug\netcoreapp3.1\Family.DAL.csproj.AssemblyReference.cache
+C:\Users\tzivy\Documents\Family\Family.DAL\obj\Debug\netcoreapp3.1\Family.DAL.AssemblyInfoInputs.cache
+C:\Users\tzivy\Documents\Family\Family.DAL\obj\Debug\netcoreapp3.1\Family.DAL.AssemblyInfo.cs
+C:\Users\tzivy\Documents\Family\Family.DAL\obj\Debug\netcoreapp3.1\Family.DAL.csproj.CoreCompileInputs.cache
+C:\Users\tzivy\Documents\Family\Family.DAL\obj\Debug\netcoreapp3.1\Family.DAL.dll
+C:\Users\tzivy\Documents\Family\Family.DAL\obj\Debug\netcoreapp3.1\Family.DAL.pdb
+C:\Users\tzivy\Documents\Family\Family.DAL\obj\Debug\netcoreapp3.1\Family.DAL.genruntimeconfig.cache

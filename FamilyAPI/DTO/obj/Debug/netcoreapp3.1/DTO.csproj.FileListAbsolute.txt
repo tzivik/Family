@@ -1,0 +1,12 @@
+C:\Users\tzivy\Documents\Family\DTO\bin\Debug\netcoreapp3.1\DTO.deps.json
+C:\Users\tzivy\Documents\Family\DTO\bin\Debug\netcoreapp3.1\DTO.dll
+C:\Users\tzivy\Documents\Family\DTO\bin\Debug\netcoreapp3.1\DTO.pdb
+C:\Users\tzivy\Documents\Family\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.AssemblyReference.cache
+C:\Users\tzivy\Documents\Family\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfoInputs.cache
+C:\Users\tzivy\Documents\Family\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfo.cs
+C:\Users\tzivy\Documents\Family\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.CoreCompileInputs.cache
+C:\Users\tzivy\Documents\Family\DTO\obj\Debug\netcoreapp3.1\DTO.dll
+C:\Users\tzivy\Documents\Family\DTO\obj\Debug\netcoreapp3.1\DTO.pdb
+C:\Users\tzivy\Documents\Family\DTO\bin\Debug\netcoreapp3.1\Family.DAL.dll
+C:\Users\tzivy\Documents\Family\DTO\bin\Debug\netcoreapp3.1\Family.DAL.pdb
+C:\Users\tzivy\Documents\Family\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.CopyComplete

@@ -1,0 +1,88 @@
+<ul class="nav nav-tabs">
+    <li class="active col-3 "> Form Family</li>
+    <li> <a (click)="toInstruction()">To Instruction Form</a></li>
+</ul>
+
+<h1>Form Of Family</h1>
+<div class="card-body">
+    <div *ngIf="parentForm">
+        <form [formGroup]="parentForm">
+            <div class="form-group col-xs-4">
+                <label class="label label-default" for="id">Parent Id:</label>
+                <input type="text" class="form-control" id="id" formControlName="id">
+                <ng-container *ngIf="parentForm.controls.id.touched && parentForm.controls.id.errors">
+                    <div class="alert alert-danger" *ngIf="parentForm.controls.id.errors.required">This field is
+                        required</div>
+                    <div class="alert alert-danger" *ngIf="parentForm.controls.id.errors.pattern">This field need be 8
+                        or 9 numbers</div>
+                </ng-container>
+            </div>
+            <div class="form-group col-xs-4">
+                <label class="label label-default" for="name">Parent First Name:</label>
+                <input type="text" class="form-control" id="firstName" formControlName="firstName">
+                <ng-container *ngIf="parentForm.controls.firstName.touched && parentForm.controls.firstName.errors">
+                    <div class="alert alert-danger" *ngIf="parentForm.controls.firstName.errors.required">This field is
+                        required</div>
+                    <div class="alert alert-danger" *ngIf="parentForm.controls.firstName.errors.pattern">This field need
+                        to be between 2-10 chars</div>
+                </ng-container>
+            </div>
+            <div class="form-group col-xs-4">
+                <label class="label label-default" for="name">Parent Last Name:</label>
+                <input type="text" class="form-control" id="lastName" formControlName="lastName">
+                <ng-container *ngIf="parentForm.controls.lastName.touched && parentForm.controls.lastName.errors">
+                    <div class="alert alert-danger" *ngIf="parentForm.controls.lastName.errors.required">This field is
+                        required</div>
+                    <div class="alert alert-danger" *ngIf="parentForm.controls.lastName.errors.pattern">This field is
+                        need to be between 2-13 chars</div>
+                </ng-container>
+            </div>
+            <div class="form-group col-xs-4">
+                <label class="label label-default" for="dateOfBorn">Parent Date Of Born:</label>
+                <input type="date" class="form-control" id="dateOfBirth" formControlName="dateOfBirth"
+                    (change)="correctDate()">
+                <div class="alert alert-danger" *ngIf="flag">this Date isn't correct</div>
+                <ng-container *ngIf="parentForm.controls.dateOfBirth.touched && parentForm.controls.dateOfBirth.errors">
+                    <div class="alert alert-danger" *ngIf="parentForm.controls.dateOfBirth.errors.required">This field
+                        is required</div>
+                </ng-container>
+            </div>
+            <div class="form-group col-xs-4">
+                <label class="label label-default" for="Hmo">HMO:</label>
+                <select class="dropup" class="form-control" for="Hmo" formControlName="Hmo">
+                    <option *ngFor="let h of hmo" name="Hmo" [value]="h">{{h}}</option>
+                </select>
+                <ng-container *ngIf="parentForm.controls.Hmo.touched && parentForm.controls.Hmo.errors">
+                    <div class="alert alert-danger" *ngIf="parentForm.controls.Hmo.errors.required">This field is
+                        required</div>
+                </ng-container>
+            </div>
+            <div class="form-group col-xs-4">
+                <label class="label label-default" for="kind">Kind:</label>
+                <br>
+                <input type="radio" class="checkbox" value="male" id="kind" formControlName="kind">male
+                <br>
+                <input type="radio" class="checkbox" value="female" id="kind" formControlName="kind">female
+                <ng-container *ngIf="parentForm.controls.kind.touched && parentForm.controls.kind.errors">
+                    <div class="alert alert-danger" *ngIf="parentForm.controls.kind.errors.required">This field is
+                        required</div>
+                </ng-container>
+            </div>
+            <ng-container *ngIf="_currentParent.children.length>0">
+                The Children:
+                <div *ngFor="let child of _currentParent.children">
+                    <button (click)="deleteChild(child.id)">delete Child</button>
+                    Id: {{child.id}}
+                    Name: {{child.name}}
+                    Date Of Born: {{child.dateOfBorn}}
+
+                </div>
+            </ng-container>
+
+            <button class="btn" (click)="addChild()">Add Child</button>
+            <!-- <button class="btn btn-info" (click)="toInstruction()" >To Instruction Form</button> -->
+            <button class="btn btn-default" type="submit" [disabled]="!parentForm.valid || flag"
+                (click)="saveFamily()">Save Family</button>
+        </form>
+    </div>
+</div>

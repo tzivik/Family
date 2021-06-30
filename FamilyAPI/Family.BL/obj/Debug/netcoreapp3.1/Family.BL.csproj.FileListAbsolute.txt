@@ -1,0 +1,14 @@
+C:\Users\tzivy\Documents\Family\Family.BL\bin\Debug\netcoreapp3.1\Family.BL.deps.json
+C:\Users\tzivy\Documents\Family\Family.BL\bin\Debug\netcoreapp3.1\Family.BL.dll
+C:\Users\tzivy\Documents\Family\Family.BL\bin\Debug\netcoreapp3.1\Family.BL.pdb
+C:\Users\tzivy\Documents\Family\Family.BL\obj\Debug\netcoreapp3.1\Family.BL.csproj.AssemblyReference.cache
+C:\Users\tzivy\Documents\Family\Family.BL\obj\Debug\netcoreapp3.1\Family.BL.AssemblyInfoInputs.cache
+C:\Users\tzivy\Documents\Family\Family.BL\obj\Debug\netcoreapp3.1\Family.BL.AssemblyInfo.cs
+C:\Users\tzivy\Documents\Family\Family.BL\obj\Debug\netcoreapp3.1\Family.BL.csproj.CoreCompileInputs.cache
+C:\Users\tzivy\Documents\Family\Family.BL\obj\Debug\netcoreapp3.1\Family.BL.dll
+C:\Users\tzivy\Documents\Family\Family.BL\obj\Debug\netcoreapp3.1\Family.BL.pdb
+C:\Users\tzivy\Documents\Family\Family.BL\bin\Debug\netcoreapp3.1\DTO.dll
+C:\Users\tzivy\Documents\Family\Family.BL\bin\Debug\netcoreapp3.1\Family.DAL.dll
+C:\Users\tzivy\Documents\Family\Family.BL\bin\Debug\netcoreapp3.1\DTO.pdb
+C:\Users\tzivy\Documents\Family\Family.BL\bin\Debug\netcoreapp3.1\Family.DAL.pdb
+C:\Users\tzivy\Documents\Family\Family.BL\obj\Debug\netcoreapp3.1\Family.BL.csproj.CopyComplete
